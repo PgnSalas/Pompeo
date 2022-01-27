@@ -1,0 +1,549 @@
+@import 'nullmain.scss';
+
+// Миксины
+@mixin FzLhLs ($Fz, $Lh, $Ls) {
+    font-size: $Fz;
+    line-height: $Lh;
+    letter-spacing: $Ls;
+}
+
+@mixin FzLh ($Fz, $Lh) {
+    font-size: $Fz;
+    line-height: $Lh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+.conteiner-nav {
+    width: 1170px;
+    margin: 0 auto;
+    height: 92px;
+}
+
+.wrapper-nav {
+    display: flex;
+    justify-content: space-between;
+    & img {
+        margin-top: 13px;
+    }
+}
+
+.block-nav {
+    padding: 34px 0px 34px 0px;
+}
+
+.list-nav {
+   display: flex;
+   justify-content: left;
+   &  li > a {
+    @include FzLhLs (12px, 22px, 2px);
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #6C6C6C;
+    padding-right: 40px;
+   }
+   & li:last-child {
+       padding: 0;
+   }
+   & > li:first-child a{
+    color: #AC1313;
+   }
+}
+
+.text-nav  {
+    & a {
+        @include FzLh (14px, 20px);
+        font-family: 'Libre Franklin', sans-serif;
+        font-style: normal;
+        color: #000;
+        font-weight: normal;
+    }
+    & a:before {
+        content: "";
+        background: url(../../img/box.png);
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform: scale(2);
+        margin-right: 10px;
+    }
+}
+
+
+.header {
+    background: url(../../img/image1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 127px 144px 114px 144px ;
+    position: relative;
+}
+.wrapper-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.conteiner-header {
+}
+
+.vaza-img {
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    left: 635px;
+}
+
+.block-header {
+    & .text-Pompeo {
+        @include  FzLhLs (14px, 24px, 2px);
+        margin-top: 98px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #D77474;
+        margin-bottom: 12px;
+    }
+    & h1 {
+        @include FzLh (48px, 58px);
+        margin-bottom: 14px;
+    }
+    & .text-modern {
+        @include FzLh (16px, 26px);
+    font-family: 'Libre Franklin', sans-serif;
+        font-weight: normal;
+        color: #6C6C6C;
+        margin-bottom: 51px;
+    }
+    & img {
+        position: absolute;
+        top: 230px;
+        left: 566px;
+        height: 68px;
+    }
+}
+
+.btn {
+        font-family: 'Poppins', sans-serif;
+        @include  FzLhLs (12px, 22px, 1px);
+        width: 201px;
+        height: 62px;
+        background: #AC1313;
+        border-radius: 0px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        &:hover {
+            background-color: #cf1717;
+            font-size: 13px;
+            opacity: 0.98;
+        }
+}
+
+
+.section-products {
+    padding: 120px 120px 150px 120px;
+}
+
+.conteiner-products {
+    margin-bottom: 63px;
+    position: relative;
+    text-align: center;
+    & p {
+        @include  FzLhLs (14px, 24px, 2px);
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #D77474;
+        margin-bottom: 40px;
+    }
+    & h2 {
+        @include  FzLh (40px, 50px);
+    }
+    & img {
+        display: inline-block;
+        position: relative;
+        bottom: 20px;
+        left: 2px;
+        z-index: 1;
+    }
+}
+
+
+.conteiner-things {
+    margin: 0px 89px 90px 89px;
+    display: flex;
+    justify-content: space-around;
+    & .block-img_1 {
+        background:  url(../../img/vases.png) center no-repeat,url(../../img/circleBrown.png) left no-repeat;
+        width: 240px;
+        height: 240px;
+        margin-right:151px;    
+    }
+    & .block-img_2 {
+        background: url(../../img/plate.png) center no-repeat,url(../../img/circleOrange.png) center no-repeat;
+        width: 240px;
+        height: 240px;
+        margin-right: 151px;
+    }
+    & .block-img_3 {
+        background: url(../../img/plates.png) center no-repeat ,url(../../img/circleRed.png) right no-repeat;
+        width: 240px;
+        height: 240px;
+    }
+}
+
+.block-img_1 {
+    position: relative;
+    p {
+        margin-top: 2px;
+        @include  FzLhLs (14px, 38px, 2px);
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        position: absolute;
+        left: 95px;
+        top: 146px;
+        color: #fff; 
+        text-transform: uppercase;
+    }
+}
+
+.block-img_2 {
+    position: relative;
+    p {
+        margin-top: 2px;
+        @include  FzLhLs (14px, 38px, 2px);
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        position: absolute;
+        left: 95px;
+        top: 146px;
+        color: #fff; 
+        text-transform: uppercase;
+    }
+}
+
+.block-img_3 {
+    position: relative;
+    p {
+        margin-top: 5px;
+        @include  FzLhLs (14px, 38px, 2px);
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        position: absolute;
+        left: 93px;
+        top: 146px;
+        color: #fff; 
+        text-transform: uppercase;
+    }
+}
+
+.conteiner-twoText {
+    display: flex;
+}
+
+
+.block-Text {
+    h3 {
+        @include  FzLh (29px, 36px);
+        margin-bottom: 26px;
+    }
+    & p {
+        @include  FzLh (14px, 24px);
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: normal;
+        color: #6C6C6C;
+    }
+}
+
+.first {
+    margin: 0px 177px 0px 24px;
+}
+
+.section-descript {
+    padding: 77px 0px 48px 144px;
+}
+
+.wrapper-descript_1 {
+    display: flex;
+    background: url(../../img/grayback.png) 0px 146px no-repeat; 
+    img {
+        display: inline-block;
+        position: relative;
+        left: 118px;
+        top: 0px;
+    }
+}
+
+.block-gold {
+    margin: 165px 0px 0px 400px;
+    h4 {
+        @include  FzLh (24px, 34px);
+        margin-bottom: 24px;
+    }
+    & .text-descript {
+        @include  FzLh (14px, 24px);
+        color: #6C6C6C;
+        margin-bottom: 27px;
+        font-family: 'Libre Franklin', sans-serif;
+
+    }
+    p {
+        @include  FzLh (14px, 24px);
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        a {
+            color: #000000;
+        }
+    }
+}
+
+.wrapper-descript_2 {
+    display: flex;
+    background: url(../../img/grayother.png) 645px 85px no-repeat;   
+    img {
+        position: relative;
+        left: 110px;
+        top: 0px;
+    }
+}
+
+.block2 {
+    margin: 99px 240px 0px 0px;
+}
+
+.section-collection {
+    padding: 121px 144px 120px 144px;
+    text-align: center;
+    &  p {
+        @include  FzLhLs (14px, 24px, 2px);  
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #D77474;
+        margin-bottom: 17px;
+    }
+    &  h2 {
+        @include  FzLh (40px, 50px);
+        margin-bottom: 63px;
+    }
+}
+
+.wrapper-collection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-decor {
+    img {
+        margin-bottom: 20px;
+    }
+    p {
+        text-align: left;
+        @include  FzLh (14px, 24px);
+        text-transform: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        color: #000;
+        a {
+            @include  FzLh (16px, 26px);
+            font-family: 'Libre Franklin', sans-serif;
+            font-weight: normal;
+            color: #6C6C6C;
+        }
+    }
+}
+
+.btn {
+    margin-top: 59px;
+}
+
+.section-start {
+    background-image: url(../../img/back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 471px;
+    padding: 120px 0px 120px 144px;
+}
+
+.conteiner-start {
+    .text1 {
+        @include  FzLhLs (14px, 24px, 2px);
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #D77474;
+        margin-bottom: 7px;
+    }
+    h3 {
+        @include  FzLh (36px, 46px);
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;  
+        margin-bottom: 13px;
+    }
+    .text2 {
+        @include  FzLh (16px, 24px);
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: bold;
+        color: #6C6C6C;
+        margin-bottom: 30px;
+        a {
+         color: #AC1313; 
+        }
+    }
+    .btn {
+        margin: 0;
+    }
+}
+
+.section-news {
+    padding: 121px 0px 161px 0px;
+    text-align: center;
+    p {
+        @include  FzLhLs (14px, 24px, 2px);
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #D77474;
+        margin: 40px 0px 40px 0px;
+    }
+    h2 {
+        @include  FzLh (40px, 50px);
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        color: #000000;
+        margin-bottom: 63px;
+        img {
+            position: relative;
+            bottom: 20px;
+            left: 0px;
+        }
+    }
+    .text-news {
+        @include  FzLh (14px, 20px);
+        font-family: 'Lato', sans-serif;
+        font-weight: normal;
+        text-transform: none;
+        letter-spacing: 0.8px;
+        color: #A1A1A1;
+        &::before {
+            content: url(../../img/squar.png);
+            padding-right: 5px;
+        }
+    }
+}
+
+form {
+    margin-bottom: 40px;
+    & input {
+        padding: 13px 0px 12px 25px;
+        @include  FzLh (14px, 20px);
+        width: 320px;
+        height: 45px;
+        border: 1px solid #EBEBEB;
+        border-radius: 0px;
+        font-family: 'Lato', sans-serif;
+        font-weight: normal;  
+        color: #A1A1A1;
+    }
+    .btn-black {
+        margin-left: 4px;
+        @include  FzLh (14px, 20px);
+        width: 175px;
+        height: 45px;
+        display: inline;   
+        background: #000000;
+        border-radius: 0px;
+        font-family: 'Lato', sans-serif;
+        font-weight: normal;
+        text-align: center;
+        color: #FFFFFF;
+        &:hover {
+            background-color: rgb(19, 18, 18);
+            font-size: 15px;
+            opacity: 0.98;
+        }
+    }
+}
+
+.section-info {
+    background: rgba(219, 219, 219, 0.1);
+    padding: 107px 120px 80px 120px;
+}
+
+.conteiner-info {
+    text-align: center;
+    img {
+        margin-bottom: 30px;
+    }
+    p {
+        @include  FzLh (14px, 24px);
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: normal;
+        color: #6C6C6C;
+        margin-bottom: 70px;
+    }
+}
+
+.wrapper-info {
+    display: flex;
+    justify-content: space-around;
+    .info1 {
+        background-image: url(../../img/letter.png);
+        background-repeat: no-repeat;
+        background-position: 65px top;
+    }
+    .info2 {
+        background-image: url(../../img/gps.png);
+        background-repeat: no-repeat;
+        background-position: 60px top;
+    }
+    .info3 {
+        background-image: url(../../img/call.png);
+        background-repeat: no-repeat;
+        background-position: 32px top;
+    }
+    .block-info {
+        text-align: center;
+        p {
+            @include  FzLhLs (13px, 23px, 1px);
+            margin: 50px 0px 20px 0px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #000;
+        }
+        a {
+            @include  FzLh (14px, 24px);
+            font-family: 'Libre Franklin', sans-serif;
+            font-weight: normal;
+            color: #6C6C6C;
+        }
+    }
+}
+
+.footer {
+    padding: 30px 159px 20px 159px;
+    text-align: center;
+    p {
+        @include  FzLh (12px, 22px);
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: normal;
+        color: #000;
+        span {
+            color: #6C6C6C;
+        }
+    }
+}
+
